@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "ICPBuggy_backend": {
+      "main": "src/ICPBuggy_backend/main.mo",
+      "type": "motoko"
+    },
+    "ICPBuggy_frontend": {
+      "dependencies": [
+        "ICPBuggy_backend"
+      ],
+      "source": [
+        "src/ICPBuggy_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "ICPBuggy_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
